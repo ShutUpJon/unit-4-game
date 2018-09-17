@@ -175,7 +175,7 @@ $(document).ready(function() {
         $('#top').append("<div id = 'enemies'></div");
         $('#middle').append("<div id = 'feedContainer'></div><div id = 'feed'><p>Welcome to the Arena, Champion. Choose an Enemy to Begin!</p></div></div>");
         $("#attackerZone").append("<div id = 'player'>"+char.image+"<br><h4>"+char.name+"<br>Attack Power: "+char.attack+"<br>Health: "+char.health+"</h4></div>");
-        for (var x = 0; x < character.length; x++) {
+        for (var x = 0; x < characters.length; x++) {
             var enemy = "enemy"+x;
             if (characters[x].name != char.name) {
                 $('#enemies').append("<div id ="+enemy+">"+characters[x].image+"</div>");
